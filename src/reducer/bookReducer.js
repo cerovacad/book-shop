@@ -6,6 +6,7 @@ import { DELETE_BOOK } from '../action/bookActions';
 export default (state =[], action) => {
   switch(action.type){
     case GET_BOOKS:
+      console.log('Fetching books...');
       return state;
     case ADD_BOOK:
       return [...state, action.payload];

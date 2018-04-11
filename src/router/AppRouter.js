@@ -5,6 +5,7 @@ import Home from '../components/Home';
 import NotFound from '../components/NotFound';
 import AddBookPage from '../components/AddBookPage';
 import EditBookPage from '../components/EditBookPage';
+import CartPage from '../components/CartPage';
 
 const AppRouter = () => (
   <BrowserRouter>
@@ -14,6 +15,7 @@ const AppRouter = () => (
       <Route path='/' component={Home} exact={true} />
       <Route path='/addbook' component={AddBookPage} exact={true} />
       <Route path='/editbook/:id' component={EditBookPage} exact={true} />
+      <Route path='/cart' component={CartPage} exact={true} />
       <Route component={NotFound} exact={true} />
     </Switch>
     </div>
